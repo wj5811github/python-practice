@@ -25,3 +25,10 @@ print(list1)
 # 从列表中删除一个元素，并用一个变量来接受删除的元素
 pop_a = list2.pop()
 print(pop_a)
+# 新建一个元组
+tuple_a = (111, 222, 333, 444, 555)
+# 列表合并元组
+list1.extend(tuple_a)
+# 或者
+list1 = list1 + list(tuple_a)
+print(list1)
