@@ -32,3 +32,15 @@ list1.extend(tuple_a)
 # 或者
 list1 = list1 + list(tuple_a)
 print(list1)
+
+for i in range(10):
+    print(f"{i}\t",end='')
+
+print()
+list_a = []
+for i in range(20):
+    if i % 2 == 0:
+        list_a.append(i)
+    else:
+        pass
+print(list_a)
