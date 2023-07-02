@@ -60,3 +60,9 @@ for i in range(10):
     for j in range(1, i+1):
         print(f"{j}*{i}={j * i}\t", end=" ")
     print()
+
+list_b = [a for a in range(10)]  # 这种写法没见过呢 list可以  元组不行呢
+print(list_b)
+
+list_c = [b for b in range(10)]
+print(list_c)
