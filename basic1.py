@@ -20,7 +20,7 @@ list1.append(6)
 list1 = list1 + list2
 print(list1)
 # 追加一个列表
-list1.extend(list2)
+list1.extend(list2)  #extend函数没有返回值即返回值为NONE，所以不能用变量接收
 print(list1)
 # 从列表中删除一个元素，并用一个变量来接受删除的元素
 pop_a = list2.pop()
@@ -44,3 +44,19 @@ for i in range(20):
     else:
         pass
 print(list_a)
+
+# while循环案例1-九九乘法表：
+i = 1
+while i < 10:
+    j = 1
+    while j <= i:
+        print(f"{j}*{i}={j * i}\t",end="")
+        j += 1
+    print()
+    i += 1
+print("\n----------#######----------")
+# for循环案例2-九九乘法表：
+for i in range(10):
+    for j in range(1, i+1):
+        print(f"{j}*{i}={j * i}\t", end=" ")
+    print()
