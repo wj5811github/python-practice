@@ -1,5 +1,4 @@
 import time
-
 # # 学习PYTHON语言第一句话
 # print("hello,world!")
 # # 与print命令对应的是input
@@ -66,3 +65,21 @@ print(list_b)
 
 list_c = [b for b in range(10)]
 print(list_c)
+
+def check():
+    while True:
+        num = input("请输入你的体温（或按exit退出）：")
+        if num.isdigit():
+            num = int(num)
+            if num <= 37.5:
+                print(f"体温是：{num},体温正常")
+            else:
+                print(f"体温是：{num},隔离")
+        else:er
+            if num == "exit":
+                print("程序已退出")
+                break
+            print("输入的不是数字，有误")
+
+if __name__ == '__main__':
+    check()
