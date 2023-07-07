@@ -29,22 +29,20 @@ def main():
     print("取款请按3")
     print("退出请按4")
 
-    while True:
-        keynum = input("请输入你的选择：")
-        if keynum == "1":
-            query(True)
-            continue
-        if keynum == "2":
-            cunqian()
-            continue
-        if keynum == "3":
-            quqian()
-            continue
-        if keynum == "4":
-            print("谢谢光临，下次再见！\n退出程序了")
-            break
+    keynum = input("请输入你的选择：")
+    if keynum == "1":
+        query(True)
 
-        return input("请输入你的选择：")
+    if keynum == "2":
+        cunqian()
+
+    if keynum == "3":
+        quqian()
+
+    if keynum == "4":
+        print("谢谢光临，下次再见！\n退出程序了")
+
+    return input("请输入你的选择：")
 
 if __name__ == '__main__':
     main()
