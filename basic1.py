@@ -75,7 +75,7 @@ def check():
                 print(f"体温是：{num},体温正常")
             else:
                 print(f"体温是：{num},隔离")
-        else:er
+        else:
             if num == "exit":
                 print("程序已退出")
                 break
